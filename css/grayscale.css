@@ -176,6 +176,10 @@
   margin-bottom: 5rem;
 } 
 
+.connect-section {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 h6 {
   margin-left: 1px;
   float: left;
@@ -187,7 +191,7 @@ h6 {
 .projects-section {
   padding: 10rem 0;
 }
-
+ 
 .projects-section .featured-text {
   padding: 2rem;
 }
@@ -213,6 +217,10 @@ h6 {
     border-width: .25rem;
     width: 30%;
   }
+}
+
+.skills-section {
+background-color: gray;
 }
 
 .signup-section {
