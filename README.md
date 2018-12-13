@@ -1,4 +1,42 @@
-# [Start Bootstrap - Grayscale](https://startbootstrap.com/template-overviews/grayscale/)
+
+README.md
+
+build status
+issues (waffle.io maybe)
+devDependencies
+npm package
+coverage
+slack
+downloads
+gitter chat
+license
+etc.
+
+HAVE WHITE SPACE
+MAKE IT PRETTY
+GIFS ARE REALLY COOL
+
+optimized performance
+lightweight (6KB gzipped)
+flexibility and extendibility
+mobile compatibility
+event management
+support for responsive web design
+object oriented programming and object chaining
+readable, centralized code and intuitive development
+support for both scroll directions (even different on one page)
+support for scrolling inside div containers (even multiple on one page)
+extensive debugging and logging capabilities
+detailed documentation
+many application examples
+
+
+
+
+
+
+
+<!-- # [Start Bootstrap - Grayscale](https://startbootstrap.com/template-overviews/grayscale/)
 
 [Grayscale](http://startbootstrap.com/template-overviews/grayscale/) is a multipurpose, one page HTML theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
 
@@ -71,4 +109,4 @@ Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework 
 
 ## Copyright and License
 
-Copyright 2013-2018 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/gh-pages/LICENSE) license.
+Copyright 2013-2018 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/gh-pages/LICENSE) license. -->
