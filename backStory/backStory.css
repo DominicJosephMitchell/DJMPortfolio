@@ -1,0 +1,61 @@
+/* backStory */
+
+h1 {
+    color: crimson;
+    font-size: 8em;
+    font-weight: bold;
+}
+
+h2 {
+    color: lawngreen;
+    font-size: 8em;
+    font-weight: bold;
+}
+
+
+p {
+    font-size: 1.5em;
+    font-display: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+body {
+    border: 20px solid darkgreen;
+    text-align: center;
+}
+
+.hero-image-one {
+    background-image: url("backStory.png");
+    background-color: darkgreen;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-image-two {
+    background-image: url("dominicdanielletyler.jpg");
+    background-repeat: no-repeat;
+    float: left;
+    width: 815px;
+    height: 900px;
+}
+
+.hero-image-three {
+    background-image: url("josh.jpg");
+    background-repeat: no-repeat;
+    float: right;
+    width: 815px;
+    height: 900px;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.body {
+    background-color: darkgreen;
+}
