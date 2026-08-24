@@ -1,0 +1,3324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <meta name="description"
+          content="Dominic Joseph Mitchell - Information Technology Professional, Systems Administrator, Network Engineer and Software Developer">
+
+    <meta name="author"
+          content="Dominic Joseph Mitchell">
+
+    <title>Dominic Joseph Mitchell | IT Professional</title>
+
+    <!-- =====================================================
+         BOOTSTRAP
+         ===================================================== -->
+    <link
+        href="vendor/bootstrap/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- =====================================================
+         FONT AWESOME
+         ===================================================== -->
+    <link
+        href="vendor/fontawesome-free/css/all.min.css"
+        rel="stylesheet">
+
+    <!-- =====================================================
+         GOOGLE FONTS
+         ===================================================== -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- =====================================================
+         ORIGINAL GRAYSCALE CSS
+         ===================================================== -->
+    <link
+        href="css/grayscale.min.css"
+        rel="stylesheet">
+
+    <!-- =====================================================
+         MODERN PORTFOLIO STYLES
+         ===================================================== -->
+    <style>
+
+        /* =====================================================
+           VARIABLES
+           ===================================================== */
+
+        :root {
+
+            --bg-dark: #050816;
+            --bg-dark-two: #090f24;
+            --bg-dark-three: #03050f;
+
+            --primary: #00d9ff;
+            --primary-dark: #0099cc;
+
+            --secondary: #7c3aed;
+            --accent: #ec4899;
+
+            --success: #22c55e;
+
+            --white: #ffffff;
+            --text: #f8fafc;
+            --muted: #a7b1c2;
+
+            --card: rgba(255, 255, 255, 0.06);
+            --card-border: rgba(255, 255, 255, 0.12);
+
+            --gradient:
+                linear-gradient(
+                    135deg,
+                    #00d9ff 0%,
+                    #7c3aed 50%,
+                    #ec4899 100%
+                );
+
+            --shadow:
+                0 20px 60px rgba(0, 0, 0, 0.35);
+        }
+
+
+        /* =====================================================
+           GLOBAL
+           ===================================================== */
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+
+            margin: 0;
+            padding: 0;
+
+            font-family: "Inter", sans-serif;
+
+            color: var(--text);
+
+            background:
+                radial-gradient(
+                    circle at 10% 10%,
+                    rgba(0, 217, 255, 0.10),
+                    transparent 30%
+                ),
+                radial-gradient(
+                    circle at 90% 20%,
+                    rgba(124, 58, 237, 0.12),
+                    transparent 30%
+                ),
+                var(--bg-dark);
+
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+
+            font-family: "Space Grotesk", sans-serif;
+
+            font-weight: 700;
+        }
+
+        p {
+
+            line-height: 1.8;
+
+            color: var(--muted);
+        }
+
+        a {
+
+            transition:
+                all 0.3s ease;
+        }
+
+        section {
+
+            position: relative;
+        }
+
+
+        /* =====================================================
+           NAVIGATION
+           ===================================================== */
+
+        #mainNav {
+
+            background:
+                rgba(5, 8, 22, 0.82) !important;
+
+            backdrop-filter: blur(18px);
+
+            -webkit-backdrop-filter: blur(18px);
+
+            border-bottom:
+                1px solid rgba(255, 255, 255, 0.08);
+
+            padding: 12px 0;
+
+            z-index: 9999;
+
+            transition:
+                all 0.3s ease;
+        }
+
+        #mainNav .navbar-brand {
+
+            margin-right: 30px;
+        }
+
+        #mainNav .navbar-brand h1 {
+
+            font-size: 1.25rem;
+
+            margin: 0 !important;
+
+            background: var(--gradient);
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        #mainNav .navbar-brand h4 {
+
+            font-size: 0.65rem;
+
+            margin: 2px 0 !important;
+
+            color: var(--muted) !important;
+        }
+
+        #mainNav .nav-link {
+
+            color: #fff !important;
+
+            font-size: 0.78rem;
+
+            font-weight: 600;
+
+            letter-spacing: 0.08em;
+
+            text-transform: uppercase;
+
+            padding: 10px 13px !important;
+
+            position: relative;
+        }
+
+        #mainNav .nav-link::after {
+
+            content: "";
+
+            position: absolute;
+
+            left: 13px;
+            right: 13px;
+            bottom: 2px;
+
+            height: 2px;
+
+            background: var(--gradient);
+
+            border-radius: 5px;
+
+            transform: scaleX(0);
+
+            transition:
+                transform 0.3s ease;
+        }
+
+        #mainNav .nav-link:hover {
+
+            color: var(--primary) !important;
+        }
+
+        #mainNav .nav-link:hover::after {
+
+            transform: scaleX(1);
+        }
+
+        .navbar-toggler {
+
+            color: white !important;
+
+            border:
+                1px solid rgba(255, 255, 255, 0.2);
+
+            padding: 8px 12px;
+
+            border-radius: 10px;
+        }
+
+
+        /* =====================================================
+           HERO
+           ===================================================== */
+
+        .masthead {
+
+            position: relative;
+
+            min-height: 100vh;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            overflow: hidden;
+
+            background:
+                linear-gradient(
+                    rgba(5, 8, 22, 0.60),
+                    rgba(5, 8, 22, 0.92)
+                ),
+                url("../img/bg-masthead.jpg");
+
+            background-size: cover;
+
+            background-position: center;
+        }
+
+        .masthead::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 500px;
+            height: 500px;
+
+            top: 5%;
+            left: -200px;
+
+            background:
+                rgba(0, 217, 255, 0.16);
+
+            border-radius: 50%;
+
+            filter: blur(90px);
+
+            animation:
+                floatingGlow 8s ease-in-out infinite;
+        }
+
+        .masthead::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 500px;
+            height: 500px;
+
+            right: -200px;
+            bottom: -100px;
+
+            background:
+                rgba(124, 58, 237, 0.18);
+
+            border-radius: 50%;
+
+            filter: blur(100px);
+
+            animation:
+                floatingGlow 10s ease-in-out infinite reverse;
+        }
+
+        .masthead .container {
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+        .hero-label {
+
+            display: inline-block;
+
+            color: var(--primary);
+
+            font-size: 0.85rem;
+
+            font-weight: 700;
+
+            letter-spacing: 4px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 15px;
+        }
+
+        .masthead h1 {
+
+            font-size:
+                clamp(3.5rem, 9vw, 8rem);
+
+            font-weight: 800;
+
+            letter-spacing: 0.06em;
+
+            background: var(--gradient);
+
+            -webkit-background-clip: text;
+
+            -webkit-text-fill-color: transparent;
+
+            animation:
+                heroFade 1s ease forwards;
+        }
+
+        .masthead h2 {
+
+            font-size:
+                clamp(1.1rem, 3vw, 2rem);
+
+            color: white !important;
+
+            margin-bottom: 25px;
+
+            animation:
+                heroFade 1.4s ease forwards;
+        }
+
+        .hero-description {
+
+            max-width: 750px;
+
+            margin: 0 auto 35px;
+
+            font-size: 1.05rem;
+
+            color: #cbd5e1;
+        }
+
+
+        /* =====================================================
+           BUTTONS
+           ===================================================== */
+
+        .btn {
+
+            border: none;
+
+            border-radius: 50px;
+
+            padding: 12px 26px;
+
+            font-weight: 700;
+
+            letter-spacing: 0.04em;
+
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+        }
+
+        .btn:hover {
+
+            transform:
+                translateY(-4px);
+
+            box-shadow:
+                0 15px 35px rgba(0, 217, 255, 0.20);
+        }
+
+        .btn-primary,
+        .btn-secondary,
+        .btn-light {
+
+            color: white !important;
+
+            background: var(--gradient);
+
+            border: none;
+        }
+
+        .btn-outline-success {
+
+            color: var(--success) !important;
+
+            border:
+                1px solid var(--success);
+
+            background: transparent;
+        }
+
+        .btn-outline-success:hover {
+
+            color: white !important;
+
+            background: var(--success);
+        }
+
+
+        /* =====================================================
+           SECTION HEADINGS
+           ===================================================== */
+
+        .section-label {
+
+            display: block;
+
+            color: var(--primary);
+
+            font-size: 0.8rem;
+
+            font-weight: 700;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+
+            font-size:
+                clamp(2rem, 5vw, 3.5rem);
+
+            color: white;
+
+            margin-bottom: 20px;
+        }
+
+        .section-title::after {
+
+            content: "";
+
+            display: block;
+
+            width: 80px;
+
+            height: 4px;
+
+            margin: 15px auto 0;
+
+            border-radius: 10px;
+
+            background: var(--gradient);
+        }
+
+
+        /* =====================================================
+           INTRODUCTION
+           ===================================================== */
+
+        #intro {
+
+            padding: 120px 20px;
+
+            background:
+                radial-gradient(
+                    circle at 80% 20%,
+                    rgba(124, 58, 237, 0.14),
+                    transparent 30%
+                ),
+                var(--bg-dark-two);
+        }
+
+        .intro-content {
+
+            max-width: 900px;
+
+            margin: auto;
+        }
+
+        .professional-tag {
+
+            display: inline-block;
+
+            padding: 12px 22px;
+
+            margin-bottom: 25px;
+
+            border-radius: 50px;
+
+            background:
+                rgba(0, 217, 255, 0.07);
+
+            border:
+                1px solid rgba(0, 217, 255, 0.20);
+
+            color: var(--primary);
+
+            font-weight: 600;
+        }
+
+        .intro-content p {
+
+            font-size: 1rem;
+
+            margin-bottom: 22px;
+        }
+
+
+        /* =====================================================
+           PROJECTS
+           ===================================================== */
+
+        #projects {
+
+            padding: 120px 20px;
+
+            background:
+                var(--bg-dark) !important;
+        }
+
+        .project-card {
+
+            overflow: hidden;
+
+            border-radius: 25px;
+
+            background:
+                rgba(255, 255, 255, 0.055);
+
+            border:
+                1px solid rgba(255, 255, 255, 0.10);
+
+            box-shadow:
+                var(--shadow);
+
+            margin-bottom: 55px;
+
+            transition:
+                transform 0.4s ease,
+                border-color 0.4s ease;
+        }
+
+        .project-card:hover {
+
+            transform:
+                translateY(-8px);
+
+            border-color:
+                rgba(0, 217, 255, 0.4);
+        }
+
+        .project-image {
+
+            width: 100%;
+
+            height: 330px;
+
+            object-fit: cover;
+
+            transition:
+                transform 0.6s ease;
+        }
+
+        .project-card:hover .project-image {
+
+            transform:
+                scale(1.05);
+        }
+
+        .project-content {
+
+            padding: 45px;
+        }
+
+        .project-category {
+
+            color: var(--primary);
+
+            font-size: 0.75rem;
+
+            font-weight: 700;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+        }
+
+        .project-content h3 {
+
+            color: white;
+
+            font-size: 1.8rem;
+
+            margin-top: 10px;
+        }
+
+        .project-content p {
+
+            margin-top: 15px;
+        }
+
+        .project-buttons {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 10px;
+
+            margin-top: 25px;
+        }
+
+
+        /* =====================================================
+           SKILLS
+           ===================================================== */
+
+        #skills {
+
+            padding: 120px 20px;
+
+            background:
+                linear-gradient(
+                    180deg,
+                    var(--bg-dark-two),
+                    var(--bg-dark)
+                ) !important;
+        }
+
+        .skill-container {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            justify-content: center;
+
+            gap: 14px;
+
+            max-width: 1050px;
+
+            margin: 45px auto 0;
+        }
+
+        .skill {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 8px;
+
+            padding: 12px 19px;
+
+            border-radius: 50px;
+
+            color: white;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(0, 217, 255, 0.08),
+                    rgba(124, 58, 237, 0.12)
+                );
+
+            border:
+                1px solid rgba(255, 255, 255, 0.12);
+
+            transition:
+                all 0.3s ease;
+        }
+
+        .skill i {
+
+            color: var(--primary);
+        }
+
+        .skill:hover {
+
+            transform:
+                translateY(-5px)
+                scale(1.03);
+
+            border-color:
+                var(--primary);
+
+            box-shadow:
+                0 10px 30px rgba(0, 217, 255, 0.14);
+        }
+
+
+        /* =====================================================
+           CONNECT
+           ===================================================== */
+
+        #connect {
+
+            padding: 100px 20px;
+
+            background:
+                var(--bg-dark-two) !important;
+        }
+
+        .contact {
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            flex-wrap: wrap;
+
+            gap: 25px;
+
+            margin-top: 40px;
+        }
+
+        .contact a {
+
+            display: block;
+        }
+
+        .contact img {
+
+            width: 75px;
+
+            height: 75px;
+
+            object-fit: cover;
+
+            border-radius: 20px;
+
+            border:
+                1px solid rgba(255, 255, 255, 0.12);
+
+            transition:
+                all 0.35s ease;
+        }
+
+        .contact img:hover {
+
+            transform:
+                translateY(-10px)
+                rotate(3deg);
+
+            border-color:
+                var(--primary);
+
+            box-shadow:
+                0 15px 35px rgba(0, 217, 255, 0.25);
+        }
+
+
+        /* =====================================================
+           ABOUT ME
+           ===================================================== */
+
+        #about {
+
+            padding: 120px 20px;
+
+            background:
+                radial-gradient(
+                    circle at 20% 30%,
+                    rgba(236, 72, 153, 0.10),
+                    transparent 30%
+                ),
+                var(--bg-dark);
+        }
+
+        .about-content {
+
+            max-width: 900px;
+
+            margin: auto;
+        }
+
+        .about-content p {
+
+            font-size: 1rem;
+
+            margin-bottom: 20px;
+        }
+
+        .about-highlight {
+
+            display: inline-block;
+
+            color: var(--primary);
+
+            font-size: 1.1rem;
+
+            font-weight: 700;
+
+            margin: 25px 0 10px;
+        }
+
+
+        /* =====================================================
+           OUTSIDE OF WORK
+           ===================================================== */
+
+        .personal-section {
+
+            padding: 100px 20px;
+
+            background:
+                var(--bg-dark-two);
+        }
+
+        .personal-section h3 {
+
+            color: white;
+
+            font-size: 2rem;
+
+            margin-bottom: 20px;
+        }
+
+
+        /* =====================================================
+           PHOTO GALLERY
+           ===================================================== */
+
+        #gallery {
+
+            padding: 110px 20px;
+
+            background:
+                var(--bg-dark);
+        }
+
+        .gallery-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(5, 1fr);
+
+            gap: 25px;
+
+            max-width: 1400px;
+
+            margin: 50px auto 0;
+        }
+
+        .flip-box {
+
+            width: 100%;
+
+            height: 250px;
+
+            perspective: 1200px;
+        }
+
+        .flip-box-inner {
+
+            position: relative;
+
+            width: 100%;
+
+            height: 100%;
+
+            transition:
+                transform 0.8s;
+
+            transform-style: preserve-3d;
+        }
+
+        .flip-box:hover .flip-box-inner {
+
+            transform:
+                rotateY(180deg);
+        }
+
+        .flip-box-front,
+        .flip-box-back {
+
+            position: absolute;
+
+            width: 100%;
+
+            height: 100%;
+
+            overflow: hidden;
+
+            border-radius: 20px;
+
+            backface-visibility: hidden;
+
+            border:
+                1px solid rgba(255,255,255,0.15);
+
+            box-shadow:
+                var(--shadow);
+        }
+
+        .flip-box-front img,
+        .flip-box-back img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+        }
+
+        .flip-box-back {
+
+            transform:
+                rotateY(180deg);
+        }
+
+        .grayscale {
+
+            filter:
+                grayscale(100%);
+
+            transition:
+                filter 0.4s ease;
+        }
+
+        .flip-box:hover .grayscale {
+
+            filter:
+                grayscale(0%);
+        }
+
+
+        /* =====================================================
+           HIKING / SIGNUP
+           ===================================================== */
+
+        .signup-section {
+
+            min-height: 450px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background:
+                linear-gradient(
+                    rgba(5,8,22,0.55),
+                    rgba(5,8,22,0.90)
+                ),
+                url("../img/hiking.jpg");
+
+            background-size: cover;
+
+            background-position: center;
+        }
+
+        .signup-section h2 {
+
+            font-size:
+                clamp(2rem, 5vw, 4rem);
+
+            color: white;
+
+            text-shadow:
+                0 5px 30px rgba(0,0,0,0.5);
+        }
+
+
+        /* =====================================================
+           CONTACT CARDS
+           ===================================================== */
+
+        .contact-section {
+
+            padding: 100px 20px;
+
+            background:
+                var(--bg-dark-three) !important;
+        }
+
+        .contact-card {
+
+            height: 100%;
+
+            padding: 35px 20px;
+
+            border-radius: 20px;
+
+            background:
+                rgba(255,255,255,0.05);
+
+            border:
+                1px solid rgba(255,255,255,0.10);
+
+            transition:
+                all 0.3s ease;
+        }
+
+        .contact-card:hover {
+
+            transform:
+                translateY(-8px);
+
+            border-color:
+                var(--primary);
+
+            box-shadow:
+                0 20px 40px rgba(0,217,255,0.10);
+        }
+
+        .contact-card i {
+
+            font-size: 2rem;
+
+            color: var(--primary);
+
+            margin-bottom: 15px;
+        }
+
+        .contact-card h4 {
+
+            color: white;
+        }
+
+        .contact-card p,
+        .contact-card a {
+
+            color: var(--muted);
+        }
+
+        .contact-card a:hover {
+
+            color: var(--primary);
+        }
+
+
+        /* =====================================================
+           SOCIAL ICONS
+           ===================================================== */
+
+        .social {
+
+            margin-top: 50px;
+        }
+
+        .social a {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            width: 55px;
+
+            height: 55px;
+
+            margin: 8px;
+
+            border-radius: 50%;
+
+            color: white;
+
+            background:
+                rgba(255,255,255,0.06);
+
+            border:
+                1px solid rgba(255,255,255,0.12);
+
+            font-size: 1.3rem;
+
+            transition:
+                all 0.3s ease;
+        }
+
+        .social a:hover {
+
+            color: white;
+
+            background:
+                var(--gradient);
+
+            transform:
+                translateY(-6px);
+        }
+
+
+        /* =====================================================
+           BACK TO TOP
+           ===================================================== */
+
+        .back-to-top {
+
+            position: fixed;
+
+            right: 25px;
+
+            bottom: 25px;
+
+            width: 52px;
+
+            height: 52px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border-radius: 50%;
+
+            color: white;
+
+            background:
+                var(--gradient);
+
+            box-shadow:
+                0 10px 30px rgba(0,0,0,0.35);
+
+            z-index: 999;
+
+            text-decoration: none;
+        }
+
+        .back-to-top:hover {
+
+            color: white;
+
+            transform:
+                translateY(-5px);
+        }
+
+
+        /* =====================================================
+           FOOTER
+           ===================================================== */
+
+        footer {
+
+            padding: 30px 20px;
+
+            background:
+                #02030a !important;
+
+            color:
+                #6b7280 !important;
+        }
+
+
+        /* =====================================================
+           ANIMATIONS
+           ===================================================== */
+
+        @keyframes floatingGlow {
+
+            0%,
+            100% {
+
+                transform:
+                    translateY(0);
+            }
+
+            50% {
+
+                transform:
+                    translateY(-30px);
+            }
+        }
+
+        @keyframes heroFade {
+
+            from {
+
+                opacity: 0;
+
+                transform:
+                    translateY(30px);
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform:
+                    translateY(0);
+            }
+        }
+
+
+        /* =====================================================
+           TABLET
+           ===================================================== */
+
+        @media (max-width: 1100px) {
+
+            .gallery-grid {
+
+                grid-template-columns:
+                    repeat(3, 1fr);
+            }
+        }
+
+
+        /* =====================================================
+           MOBILE
+           ===================================================== */
+
+        @media (max-width: 767px) {
+
+            #mainNav {
+
+                padding:
+                    10px 15px;
+            }
+
+            #mainNav .navbar-brand h1 {
+
+                font-size:
+                    1rem;
+            }
+
+            #mainNav .navbar-brand h4 {
+
+                display:
+                    none;
+            }
+
+            .masthead h1 {
+
+                font-size:
+                    3rem;
+            }
+
+            .masthead h2 {
+
+                font-size:
+                    1rem;
+
+                line-height:
+                    1.6;
+            }
+
+            .hero-description {
+
+                font-size:
+                    0.95rem;
+
+                padding:
+                    0 10px;
+            }
+
+            #intro,
+            #projects,
+            #skills,
+            #about,
+            #gallery {
+
+                padding:
+                    80px 15px;
+            }
+
+            .project-card {
+
+                margin-bottom:
+                    35px;
+            }
+
+            .project-image {
+
+                height:
+                    240px;
+            }
+
+            .project-content {
+
+                padding:
+                    28px;
+            }
+
+            .project-content h3 {
+
+                font-size:
+                    1.5rem;
+            }
+
+            .gallery-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+
+                gap:
+                    15px;
+            }
+
+            .flip-box {
+
+                height:
+                    200px;
+            }
+
+            .contact {
+
+                gap:
+                    15px;
+            }
+
+            .contact img {
+
+                width:
+                    65px;
+
+                height:
+                    65px;
+            }
+        }
+
+
+        /* =====================================================
+           SMALL PHONES
+           ===================================================== */
+
+        @media (max-width: 480px) {
+
+            .gallery-grid {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+            .flip-box {
+
+                max-width:
+                    280px;
+
+                height:
+                    280px;
+
+                margin:
+                    auto;
+            }
+
+            .project-buttons {
+
+                flex-direction:
+                    column;
+            }
+
+            .project-buttons .btn {
+
+                width:
+                    100%;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body id="page-top">
+
+
+    <!-- =====================================================
+         NAVIGATION
+         ===================================================== -->
+
+    <nav
+        class="navbar navbar-expand-lg navbar-dark fixed-top"
+        id="mainNav">
+
+        <div class="container">
+
+            <a
+                class="navbar-brand js-scroll-trigger"
+                href="#page-top">
+
+                <h1>
+                    Dominic Joseph Mitchell
+                </h1>
+
+                <h4>
+                    Systems Administrator
+                </h4>
+
+                <h4>
+                    Software / Network Engineer
+                </h4>
+
+            </a>
+
+
+            <button
+                class="navbar-toggler navbar-toggler-right"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarResponsive"
+                aria-controls="navbarResponsive"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                Menu
+
+                <i class="fas fa-bars"></i>
+
+            </button>
+
+
+            <div
+                class="collapse navbar-collapse"
+                id="navbarResponsive">
+
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link js-scroll-trigger"
+                            href="#intro">
+                            Intro
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link js-scroll-trigger"
+                            href="#projects">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link js-scroll-trigger"
+                            href="#skills">
+                            Skills
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link js-scroll-trigger"
+                            href="#about">
+                            About Me
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link js-scroll-trigger"
+                            href="#connect">
+                            Connect
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link js-scroll-trigger"
+                            href="#contact">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =====================================================
+         HERO
+         ===================================================== -->
+
+    <header class="masthead">
+
+        <div class="container">
+
+            <div class="text-center">
+
+                <span class="hero-label">
+                    Information Technology Professional
+                </span>
+
+                <h1>
+                    DOMINIC MITCHELL
+                </h1>
+
+                <h2>
+
+                    Systems Administrator
+
+                    <span style="color:#00d9ff;">
+                        |
+                    </span>
+
+                    Network Engineer
+
+                    <span style="color:#7c3aed;">
+                        |
+                    </span>
+
+                    Software Developer
+
+                </h2>
+
+                <p class="hero-description">
+
+                    Building reliable infrastructure,
+                    solving complex technical problems,
+                    and creating modern digital solutions.
+
+                </p>
+
+                <a
+                    href="#intro"
+                    class="btn btn-primary js-scroll-trigger">
+
+                    Explore My Work
+
+                    <i class="fas fa-arrow-down ml-2"></i>
+
+                </a>
+
+                <a
+                    href="img/DJM Resume 08242026.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-secondary ml-2">
+
+                    <i class="fas fa-file-pdf mr-2"></i>
+
+                    Resume
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         INTRODUCTION
+         ===================================================== -->
+
+    <section id="intro">
+
+        <div class="container">
+
+            <div class="intro-content text-center">
+
+                <span class="section-label">
+                    Professional Profile
+                </span>
+
+                <h2 class="section-title">
+                    Introduction
+                </h2>
+
+                <div class="professional-tag">
+
+                    Information Technology Professional |
+                    IT Infrastructure |
+                    Network Engineering |
+                    Software & Systems
+
+                </div>
+
+
+                <p>
+
+                    Accomplished Information Technology professional
+                    with extensive experience designing, developing,
+                    implementing, managing, and supporting enterprise
+                    technology environments.
+
+                </p>
+
+                <p>
+
+                    Comprehensive expertise spanning software and
+                    hardware systems, network engineering, server and
+                    network infrastructure, web design, systems
+                    development, and IT operations.
+
+                </p>
+
+                <p>
+
+                    Highly adaptable and quick to learn new technologies,
+                    concepts, and methodologies, with a proven ability
+                    to assess complex challenges, develop effective
+                    solutions, and adjust strategies to meet evolving
+                    business and technical requirements.
+
+                </p>
+
+                <p>
+
+                    Experienced in managing projects from conception
+                    through implementation while consistently meeting
+                    deadlines, technical specifications, and
+                    organizational objectives.
+
+                </p>
+
+                <p>
+
+                    Strong background working independently and
+                    collaboratively in both project-based and enterprise
+                    environments.
+
+                </p>
+
+                <p>
+
+                    Recognized for meticulous attention to detail,
+                    strong technical documentation, effective written
+                    and verbal communication, and the ability to
+                    translate complex technical concepts into practical
+                    business solutions.
+
+                </p>
+
+                <p>
+
+                    Multi-certified IT professional with extensive
+                    experience planning, installing, configuring,
+                    managing, securing, and optimizing server and
+                    network infrastructures to maximize availability,
+                    reliability, scalability, and performance.
+
+                </p>
+
+                <p>
+
+                    Proven problem solver and troubleshooter with
+                    strong organizational, analytical, and leadership
+                    skills.
+
+                </p>
+
+                <p>
+
+                    Brings more than 25 years of management and
+                    leadership experience within Fortune 500 and
+                    Fortune 700 organizations, leading technical teams,
+                    projects, and initiatives across diverse and
+                    demanding business environments.
+
+                </p>
+
+                <p>
+
+                    A results-driven technology professional who
+                    combines hands-on technical expertise with
+                    strategic leadership, project management, and
+                    team collaboration.
+
+                </p>
+
+                <div class="mt-4">
+
+                    <a
+                        href="img/DJM Resume 08242026.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary">
+
+                        <i class="fas fa-file-pdf mr-2"></i>
+
+                        View My Resume
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PROJECTS
+         ===================================================== -->
+
+    <section id="projects">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <span class="section-label">
+                    Selected Work
+                </span>
+
+                <h2 class="section-title">
+                    Projects
+                </h2>
+
+                <p class="text-white-50">
+
+                    A collection of websites, applications,
+                    development projects, and technical solutions.
+
+                </p>
+
+            </div>
+
+
+            <!-- =================================================
+                 PROJECT 1
+                 ================================================= -->
+
+            <div class="project-card">
+
+                <div class="row align-items-center no-gutters">
+
+                    <div class="col-lg-6">
+
+                        <img
+                            src="img/MEGA.PNG"
+                            class="project-image"
+                            alt="MEGA Transportation Group website">
+
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <div class="project-content">
+
+                            <span class="project-category">
+                                Web Development
+                            </span>
+
+                            <h3>
+                                MEGA Transportation Group
+                            </h3>
+
+                            <p>
+
+                                Mega Transportation Group /
+                                Mega Logistics /
+                                Mega Professionals /
+                                Mega Truck Repair /
+                                Predicata.
+
+                            </p>
+
+                            <p>
+
+                                Business websites and digital
+                                solutions developed to support
+                                multiple transportation and
+                                professional service operations.
+
+                            </p>
+
+                            <div class="project-buttons">
+
+                                <a
+                                    href="https://www.megatg.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="btn btn-primary">
+
+                                    <i class="fas fa-external-link-alt mr-2"></i>
+
+                                    View Project
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 PROJECT 2
+                 ================================================= -->
+
+            <div class="project-card">
+
+                <div class="row align-items-center no-gutters">
+
+                    <div class="col-lg-6 order-lg-2">
+
+                        <img
+                            src="img/nursing.jpg"
+                            class="project-image"
+                            alt="Medical Training Application">
+
+                    </div>
+
+                    <div class="col-lg-6 order-lg-1">
+
+                        <div class="project-content">
+
+                            <span class="project-category">
+                                Application Development
+                            </span>
+
+                            <h3>
+                                Medical Training Application
+                            </h3>
+
+                            <p>
+
+                                Custom training application
+                                currently in development.
+
+                            </p>
+
+                            <p>
+
+                                Technology stack includes HTML,
+                                CSS, Bootstrap, JavaScript,
+                                React, MongoDB, Mongoose,
+                                and Express.js.
+
+                            </p>
+
+                            <div class="project-buttons">
+
+                                <a
+                                    href="https://dominicjosephmitchell.github.io/nursing/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="btn btn-primary">
+
+                                    <i class="fas fa-external-link-alt mr-2"></i>
+
+                                    View Project
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 PROJECT 3
+                 ================================================= -->
+
+            <div class="project-card">
+
+                <div class="row align-items-center no-gutters">
+
+                    <div class="col-lg-6">
+
+                        <img
+                            src="img/kw-mckenna.jpg"
+                            class="project-image"
+                            alt="KW McKenna Real Estate website">
+
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <div class="project-content">
+
+                            <span class="project-category">
+                                Web Development
+                            </span>
+
+                            <h3>
+                                KW - McKenna Real Estate
+                            </h3>
+
+                            <p>
+
+                                Current real estate website
+                                development project.
+
+                            </p>
+
+                            <p>
+
+                                Built using HTML, CSS, JavaScript,
+                                JSON, jQuery, and a modified
+                                Bootstrap theme.
+
+                            </p>
+
+                            <div class="project-buttons">
+
+                                <a
+                                    href="https://github.com/DominicJosephMitchell/mckenna"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="btn btn-secondary">
+
+                                    <i class="fab fa-github mr-2"></i>
+
+                                    Code
+
+                                </a>
+
+                                <a
+                                    href="https://dominicjosephmitchell.github.io/mckenna/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="btn btn-primary">
+
+                                    <i class="fas fa-external-link-alt mr-2"></i>
+
+                                    Project
+
+                                </a>
+
+                                <a
+                                    href="http://dominicjmitchell.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="btn btn-outline-success">
+
+                                    WordPress
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 PROJECT 4
+                 ================================================= -->
+
+            <div class="project-card">
+
+                <div class="row align-items-center no-gutters">
+
+                    <div class="col-lg-6 order-lg-2">
+
+                        <img
+                            src="img/MCI.png"
+                            class="project-image"
+                            alt="MCI Construction website">
+
+                    </div>
+
+                    <div class="col-lg-6 order-lg-1">
+
+                        <div class="project-content">
+
+                            <span class="project-category">
+                                Web Development
+                            </span>
+
+                            <h3>
+                                MCI Construction
+                            </h3>
+
+                            <p>
+
+                                Sample construction website
+                                currently in development.
+
+                            </p>
+
+                            <p>
+
+                                Built using HTML, CSS,
+                                JavaScript, JSON, jQuery,
+                                and Bootstrap.
+
+                            </p>
+
+                            <div class="project-buttons">
+
+                                <a
+                                    href="https://github.com/DominicJosephMitchell/MCI"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="btn btn-secondary">
+
+                                    <i class="fab fa-github mr-2"></i>
+
+                                    Code
+
+                                </a>
+
+                                <a
+                                    href="https://dominicjosephmitchell.github.io/MCI/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="btn btn-primary">
+
+                                    <i class="fas fa-external-link-alt mr-2"></i>
+
+                                    Project
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 PROJECT 5
+                 ================================================= -->
+
+            <div class="project-card">
+
+                <div class="row align-items-center no-gutters">
+
+                    <div class="col-lg-6">
+
+                        <img
+                            src="img/Project2.PNG"
+                            class="project-image"
+                            alt="Vacation website project">
+
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <div class="project-content">
+
+                            <span class="project-category">
+                                Front-End Development
+                            </span>
+
+                            <h3>
+                                Vacations
+                            </h3>
+
+                            <p>
+
+                                A multi-page user experience
+                                designed as a vacation and
+                                travel photo album.
+
+                            </p>
+
+                            <p>
+
+                                Built using HTML and CSS with
+                                a focus on visual presentation
+                                and user experience.
+
+                            </p>
+
+                            <div class="project-buttons">
+
+                                <a
+                                    href="https://github.com/DominicJosephMitchell/Vacations/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="btn btn-secondary">
+
+                                    <i class="fab fa-github mr-2"></i>
+
+                                    Code
+
+                                </a>
+
+                                <a
+                                    href="https://dominicjosephmitchell.github.io/Vacations/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="btn btn-primary">
+
+                                    <i class="fas fa-external-link-alt mr-2"></i>
+
+                                    Project
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SKILLS
+         ===================================================== -->
+
+    <section id="skills">
+
+        <div class="container">
+
+            <div class="text-center">
+
+                <span class="section-label">
+                    Technical Expertise
+                </span>
+
+                <h2 class="section-title">
+                    Skills
+                </h2>
+
+                <p class="text-white-50">
+
+                    Infrastructure, networking, software
+                    development, security, leadership,
+                    and technical operations.
+
+                </p>
+
+            </div>
+
+
+            <div class="skill-container">
+
+
+                <span class="skill">
+                    <i class="fas fa-server"></i>
+                    Server Administration
+                </span>
+
+                <span class="skill">
+                    <i class="fas fa-network-wired"></i>
+                    LAN / WAN / NOC
+                </span>
+
+                <span class="skill">
+                    <i class="fas fa-database"></i>
+                    Database
+                </span>
+
+                <span class="skill">
+                    <i class="fas fa-shield-alt"></i>
+                    Security
+                </span>
+
+                <span class="skill">
+                    <i class="fas fa-cloud"></i>
+                    Office 365
+                </span>
+
+                <span class="skill">
+                    <i class="fas fa-desktop"></i>
+                    Desktop Support
+                </span>
+
+                <span class="skill">
+                    <i class="fas fa-tools"></i>
+                    Troubleshooting
+                </span>
+
+                <span class="skill">
+                    <i class="fas fa-file-alt"></i>
+                    Documentation
+                </span>
+
+                <span class="skill">
+                    <i class="fas fa-project-diagram"></i>
+                    Project Management
+                </span>
+
+                <span class="skill">
+                    <i class="fas fa-users"></i>
+                    Leadership
+                </span>
+
+                <span class="skill">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    Training & Mentoring
+                </span>
+
+                <span class="skill">
+                    <i class="fas fa-tasks"></i>
+                    Agile
+                </span>
+
+                <span class="skill">
+                    <i class="fas fa-sync-alt"></i>
+                    Scrum
+                </span>
+
+                <span class="skill">
+                    <i class="fas fa-code"></i>
+                    HTML
+                </span>
+
+                <span class="skill">
+                    <i class="fab fa-css3-alt"></i>
+                    CSS
+                </span>
+
+                <span class="skill">
+                    <i class="fab fa-js"></i>
+                    JavaScript
+                </span>
+
+                <span class="skill">
+                    <i class="fab fa-bootstrap"></i>
+                    Bootstrap
+                </span>
+
+                <span class="skill">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </span>
+
+                <span class="skill">
+                    <i class="fas fa-code-branch"></i>
+                    Git / Git-Bash
+                </span>
+
+                <span class="skill">
+                    <i class="fas fa-laptop-code"></i>
+                    Visual Studio
+                </span>
+
+                <span class="skill">
+                    <i class="fas fa-network-wired"></i>
+                    VMware
+                </span>
+
+                <span class="skill">
+                    <i class="fas fa-server"></i>
+                    Networking
+                </span>
+
+                <span class="skill">
+                    <i class="fas fa-certificate"></i>
+                    CompTIA A+
+                </span>
+
+                <span class="skill">
+                    <i class="fas fa-certificate"></i>
+                    CompTIA Network+
+                </span>
+
+                <span class="skill">
+                    <i class="fas fa-certificate"></i>
+                    CompTIA Security+
+                </span>
+
+                <span class="skill">
+                    <i class="fas fa-sitemap"></i>
+                    MVC & SQL
+                </span>
+
+                <span class="skill">
+                    <i class="fas fa-code"></i>
+                    Backbone JS
+                </span>
+
+                <span class="skill">
+                    <i class="fas fa-code"></i>
+                    Handlebars
+                </span>
+
+                <span class="skill">
+                    <i class="fas fa-cogs"></i>
+                    Configuration
+                </span>
+
+                <span class="skill">
+                    <i class="fas fa-download"></i>
+                    Installation
+                </span>
+
+                <span class="skill">
+                    <i class="fas fa-arrow-up"></i>
+                    Upgrading
+                </span>
+
+                <span class="skill">
+                    <i class="fas fa-key"></i>
+                    Licensing
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CONNECT
+         ===================================================== -->
+
+    <section id="connect">
+
+        <div class="container">
+
+            <div class="text-center">
+
+                <span class="section-label">
+                    Get In Touch
+                </span>
+
+                <h2 class="section-title">
+                    Let's Connect
+                </h2>
+
+                <p class="text-white-50">
+
+                    Interested in technology, collaboration,
+                    projects, or professional opportunities?
+
+                </p>
+
+            </div>
+
+
+            <div class="contact">
+
+                <!-- Email -->
+
+                <a
+                    href="mailto:nstco29@gmail.com"
+                    aria-label="Email Dominic Mitchell">
+
+                    <img
+                        src="img/email.png"
+                        alt="Email">
+
+                </a>
+
+
+                <!-- LinkedIn -->
+
+                <a
+                    href="https://www.linkedin.com/in/dominic-j-mitchell/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn profile">
+
+                    <img
+                        src="img/linkedin.jpg"
+                        alt="LinkedIn">
+
+                </a>
+
+
+                <!-- GitHub -->
+
+                <a
+                    href="https://github.com/DominicJosephMitchell?tab=repositories"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub repositories">
+
+                    <img
+                        src="img/github.jpg"
+                        alt="GitHub">
+
+                </a>
+
+
+                <!-- Resume -->
+
+                <a
+                    href="img/DJM Resume 08242026.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View resume">
+
+                    <img
+                        src="img/resumelogo.png"
+                        alt="Resume">
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ABOUT ME
+         ===================================================== -->
+
+    <section id="about">
+
+        <div class="container">
+
+            <div class="about-content text-center">
+
+                <span class="section-label">
+                    Personal Profile
+                </span>
+
+                <h2 class="section-title">
+                    About Me
+                </h2>
+
+
+                <a
+                    href="resume/resume.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary mb-5">
+
+                    <i class="fas fa-file-code mr-2"></i>
+
+                    Coded Resume
+
+                </a>
+
+
+                <p>
+
+                    <strong class="text-white">
+                        Greetings, my name is Dominic Mitchell.
+                    </strong>
+
+                </p>
+
+
+                <p>
+
+                    I am a versatile and adaptable IT professional
+                    with extensive experience managing server and
+                    network infrastructures. I am multi-certified
+                    and skilled in planning, installing, configuring,
+                    maintaining, and optimizing IT environments to
+                    achieve high availability, reliability, security,
+                    and performance.
+
+                </p>
+
+                <p>
+
+                    I am a skilled problem solver, troubleshooter,
+                    organizer, and systems administrator with
+                    experience leading projects and teams across
+                    a variety of environments.
+
+                </p>
+
+                <p>
+
+                    I am comfortable working independently or
+                    collaboratively and thrive when addressing
+                    complex technical challenges.
+
+                </p>
+
+                <p>
+
+                    I am eager to learn new technologies, adapt to
+                    changing environments, research solutions,
+                    and apply new concepts to real-world problems.
+
+                </p>
+
+                <p>
+
+                    My ability to manage complex issues, prioritize
+                    responsibilities, meet deadlines, and maintain
+                    project requirements allows me to consistently
+                    work toward successful project completion.
+
+                </p>
+
+                <p>
+
+                    I also have experience creating, editing,
+                    and maintaining detailed technical documentation
+                    and communicating technical information clearly
+                    to both technical and non-technical audiences.
+
+                </p>
+
+
+                <span class="about-highlight">
+
+                    Combining Technology, Leadership,
+                    and Problem Solving
+
+                </span>
+
+
+                <p>
+
+                    Information technology brings together many of
+                    my strengths and interests. I enjoy designing,
+                    creating, building, troubleshooting, and managing
+                    technical solutions while also having the
+                    opportunity to lead projects and collaborate
+                    with others.
+
+                </p>
+
+                <p>
+
+                    Networking, systems administration, programming,
+                    and infrastructure management provide an ideal
+                    environment for me to apply my technical
+                    knowledge, creativity, leadership skills,
+                    and problem-solving abilities.
+
+                </p>
+
+                <p>
+
+                    In 2018, I enrolled at the Institute of
+                    Entrepreneurial & Leadership. After graduating,
+                    I continued expanding my education and technical
+                    knowledge through additional training at
+                    General Assembly and Rhode Coders.
+
+                </p>
+
+                <p>
+
+                    These experiences have helped me develop a
+                    broader understanding of technology while
+                    strengthening my ability to learn independently
+                    and adapt to new tools, technologies, and
+                    methodologies.
+
+                </p>
+
+                <p>
+
+                    As a leader, business owner, and project manager,
+                    I have developed a diverse set of skills that
+                    translate directly into the technology industry.
+
+                </p>
+
+                <p>
+
+                    These include leadership, organization,
+                    communication, attention to detail,
+                    project management, troubleshooting,
+                    perseverance, and analytical problem solving.
+
+                </p>
+
+                <p>
+
+                    I am an outgoing and personable professional
+                    who continuously strives to improve my skills
+                    and expand my knowledge.
+
+                </p>
+
+                <p>
+
+                    Whether through formal education,
+                    self-directed learning, or on-the-job
+                    experience, I have consistently demonstrated
+                    a commitment to professional growth and
+                    lifelong learning.
+
+                </p>
+
+                <p>
+
+                    I am confident that my combination of technical
+                    expertise, leadership experience, adaptability,
+                    and commitment to continuous improvement would
+                    allow me to make a meaningful contribution to
+                    an organization while continuing to grow as
+                    an IT professional.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         OUTSIDE OF WORK
+         ===================================================== -->
+
+    <section class="personal-section">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-10 mx-auto">
+
+                    <div class="text-center">
+
+                        <span class="section-label">
+                            Life Beyond Technology
+                        </span>
+
+                        <h2 class="section-title">
+                            Outside of Work
+                        </h2>
+
+                    </div>
+
+
+                    <p>
+
+                        I believe your career should be an important
+                        part of your life—but it shouldn't be your
+                        entire life. There is a world beyond the
+                        office, the keyboard, and the next big
+                        project, and I make sure to leave plenty
+                        of room for it.
+
+                    </p>
+
+                    <p>
+
+                        Outside of work, I enjoy spending time with
+                        my family and, of course, I can never stay
+                        too far away from technology. Programming,
+                        coding, networking and learning new things are hobbies
+                        that often find their way into my downtime.
+
+                    </p>
+
+                    <p>
+
+                        For me, curiosity doesn't clock out at 5 PM!
+
+                    </p>
+
+                    <p>
+
+                        Most importantly, I am a devoted father, grandfather, son, and uncle. 
+                        My family is at the center of everything I do, and I value the
+                        time we spend together.
+
+                    </p>
+
+                    <p>
+
+                        Over the years, I've also learned that
+                        family isn't defined solely by blood.
+                        Family is the people who support you,
+                        believe in you, challenge you to grow,
+                        and are there when you need someone
+                        to lean on.
+
+                    </p>
+
+                    <p>
+
+                        To me, strong relationships, trust,
+                        loyalty, and a sense of community are
+                        what make life meaningful.
+
+                    </p>
+
+                    <p>
+
+                        At the end of the day, technology may be
+                        my profession, but family, relationships,
+                        and continuous growth are what keep me
+                        grounded—and give me plenty of reasons
+                        to keep moving forward.
+
+                    </p>
+
+
+                    <h3 class="mt-5">
+                        Hobbies & Activities
+                    </h3>
+
+
+                    <p>
+
+                        I believe hobbies are an important part
+                        of a balanced life. They give us an
+                        opportunity to step away from our daily
+                        responsibilities, recharge, challenge
+                        ourselves, and discover new interests.
+
+                    </p>
+
+                    <p>
+
+                        I have a strong passion for staying active
+                        and enjoying the outdoors.
+
+                    </p>
+
+                    <p>
+
+                        Ice hockey, golf, bicycling, and motorcycle
+                        riding are some of my favorite activities.
+
+                    </p>
+
+                    <p>
+
+                        Each offers something different—from the
+                        teamwork and fast pace of hockey, to the
+                        patience and precision of golf, to the
+                        freedom and adventure that come with
+                        cycling and riding motorcycles.
+
+                    </p>
+
+                    <p>
+
+                        When I'm looking to slow things down,
+                        I enjoy watching movies, listening to music,
+                        and spending quiet time away from work.
+
+                    </p>
+
+                    <p>
+
+                        One of my favorite ways to unwind is
+                        finding a beautiful spot along the coastline,
+                        sitting, relaxing and simply enjoying the
+                        sound of the ocean and the wildlife around me.
+
+                    </p>
+
+                    <p>
+
+                        For me, hobbies aren't just ways to pass
+                        the time. They're opportunities to stay
+                        active, explore, learn, have fun, and create
+                        lasting memories with the people I care about.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PHOTO GALLERY
+         ===================================================== -->
+
+    <section id="gallery">
+
+        <div class="container-fluid">
+
+            <div class="text-center">
+
+                <span class="section-label">
+                    Beyond The Office
+                </span>
+
+                <h2 class="section-title">
+                    Life & Interests
+                </h2>
+
+                <p class="text-white-50">
+
+                    Hover over the photos to explore.
+
+                </p>
+
+            </div>
+
+
+            <div class="gallery-grid">
+
+
+                <!-- PHOTO 1 -->
+
+                <div class="flip-box">
+
+                    <div class="flip-box-inner">
+
+                        <div class="flip-box-front">
+
+                            <img
+                                src="img/cutlass.jpg"
+                                alt="Cutlass">
+
+                        </div>
+
+                        <div class="flip-box-back">
+
+                            <img
+                                src="img/FatBoy 2022.PNG"
+                                alt="Fat Boy motorcycle">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PHOTO 2 -->
+
+                <div class="flip-box">
+
+                    <div class="flip-box-inner">
+
+                        <div class="flip-box-front">
+
+                            <img
+                                src="img/New_England_Sports.jpg"
+                                alt="New England sports">
+
+                        </div>
+
+                        <div class="flip-box-back">
+
+                            <img
+                                src="img/New_England_Sports.jpg"
+                                alt="New England sports">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PHOTO 3 -->
+
+                <div class="flip-box">
+
+                    <div class="flip-box-inner">
+
+                        <div class="flip-box-front">
+
+                            <img
+                                src="img/Boston.jpg"
+                                alt="Boston">
+
+                        </div>
+
+                        <div class="flip-box-back">
+
+                            <img
+                                src="img/VanHalen.jpg"
+                                alt="Van Halen">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PHOTO 4 -->
+
+                <div class="flip-box">
+
+                    <div class="flip-box-inner">
+
+                        <div class="flip-box-front">
+
+                            <img
+                                src="img/bg-signupTwo.jpg"
+                                alt="Outdoor scenery">
+
+                        </div>
+
+                        <div class="flip-box-back">
+
+                            <img
+                                src="img/hiking.jpg"
+                                alt="Hiking">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PHOTO 5 -->
+
+                <div class="flip-box">
+
+                    <div class="flip-box-inner">
+
+                        <div class="flip-box-front">
+
+                            <img
+                                src="img/Hockey43.jpg"
+                                alt="Hockey">
+
+                        </div>
+
+                        <div class="flip-box-back">
+
+                            <img
+                                src="img/HockeyYoung.jpg"
+                                alt="Youth hockey">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         HIKING SECTION
+         ===================================================== -->
+
+    <section id="signup" class="signup-section">
+
+        <div class="container">
+
+            <div class="text-center">
+
+                <h2>
+
+                    Explore the Outdoors
+
+                </h2>
+
+                <p class="text-white">
+
+                    Sometimes the best reset is a trail,
+                    fresh air, and a little adventure.
+
+                </p>
+
+                <a
+                    href="#gallery"
+                    class="btn btn-primary">
+
+                    <i class="fas fa-mountain mr-2"></i>
+
+                    Explore
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CONTACT
+         ===================================================== -->
+
+    <section id="contact" class="contact-section">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <span class="section-label">
+                    Contact Information
+                </span>
+
+                <h2 class="section-title">
+                    Get In Touch
+                </h2>
+
+            </div>
+
+
+            <div class="row">
+
+
+                <!-- ADDRESS -->
+
+                <div class="col-md-4 mb-4">
+
+                    <div class="contact-card text-center">
+
+                        <i class="fas fa-map-marked-alt"></i>
+
+                        <h4>
+                            Location
+                        </h4>
+
+                        <hr>
+
+                        <p>
+
+                            West Warwick, RI
+                            <br>
+                            Dade City, FL
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div class="col-md-4 mb-4">
+
+                    <div class="contact-card text-center">
+
+                        <i class="fas fa-envelope"></i>
+
+                        <h4>
+                            Email
+                        </h4>
+
+                        <hr>
+
+                        <p>
+
+                            <a
+                                href="mailto:nstco29@gmail.com">
+
+                                nstco29@gmail.com
+
+                            </a>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PHONE -->
+
+                <div class="col-md-4 mb-4">
+
+                    <div class="contact-card text-center">
+
+                        <i class="fas fa-mobile-alt"></i>
+
+                        <h4>
+                            Phone
+                        </h4>
+
+                        <hr>
+
+                        <p>
+
+                            <a href="tel:+14014403243">
+
+                                1 (401) 440-3243
+
+                            </a>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 SOCIAL
+                 ================================================= -->
+
+            <div class="social text-center">
+
+
+                <a
+                    href="https://twitter.com/DominicJosephM1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Twitter">
+
+                    <i class="fab fa-twitter"></i>
+
+                </a>
+
+
+                <a
+                    href="https://www.linkedin.com/in/dominic-j-mitchell/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn">
+
+                    <i class="fab fa-linkedin"></i>
+
+                </a>
+
+
+                <a
+                    href="https://github.com/DominicJosephMitchell?tab=repositories"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub">
+
+                    <i class="fab fa-github"></i>
+
+                </a>
+
+            </div>
+
+
+            <!-- BACK TO TOP -->
+
+            <div class="text-center mt-5">
+
+                <a
+                    href="#page-top"
+                    class="back-to-top"
+                    aria-label="Back to top">
+
+                    <i class="fas fa-chevron-up"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="text-center">
+
+        <div class="container">
+
+            <p class="mb-0">
+
+                2018 Copyright &copy;
+                <span id=></span>
+                Dominic Joseph Mitchell
+
+            </p>
+
+            <small>
+
+                Information Technology |
+                Systems Administration |
+                Network Engineering |
+                Software Development
+
+            </small>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <script src="js/grayscale.min.js"></script>
+
+
+    <!-- =====================================================
+         CUSTOM JAVASCRIPT
+         ===================================================== -->
+
+    <script>
+
+        /*
+         * Automatically update copyright year
+         */
+
+        document.getElementById("currentYear").textContent =
+            new Date().getFullYear();
+
+
+        /*
+         * Close mobile navigation after clicking a link
+         */
+
+        $(document).ready(function () {
+
+            $(".navbar-nav .nav-link").on("click", function () {
+
+                $(".navbar-collapse").collapse("hide");
+
+            });
+
+        });
+
+
+        /*
+         * Back-to-top button
+         */
+
+        $(window).scroll(function () {
+
+            if ($(this).scrollTop() > 400) {
+
+                $(".back-to-top").fadeIn();
+
+            } else {
+
+                $(".back-to-top").fadeOut();
+
+            }
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>
